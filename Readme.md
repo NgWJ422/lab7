@@ -1,0 +1,1 @@
+Record all hotel's visitor record history

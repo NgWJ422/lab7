@@ -1,0 +1,50 @@
+get http://localhost:3000/
+
+###
+post http://localhost:3000/record
+Content-Type: application/json
+
+{
+    "name":"Funnnn",
+    "gender":"Female",
+    "age":"22",
+    "Mykad":"000000-00-0000",
+    "ethnicity":"Cina",
+    "citizenship":"malaysia",
+    "hotel_room_number":"1",
+    "checkin_date":"24 June 2023",
+    "checkin_time":"1200"
+}
+
+###
+get http://localhost:3000/readall
+
+###
+get http://localhost:3000/readone/649743378424c841482f0170
+
+###
+post http://localhost:3000/read/filter
+Content-Type: application/json
+
+{
+    "gender":"Male"
+}
+
+###
+patch http://localhost:3000/update/649743088424c841482f016e
+Content-Type: application/json
+
+{
+    "ethnicity":"Cina222"
+}
+
+###
+delete http://localhost:3000/delete/6497467b05815420fd648685
+
+###
+delete http://localhost:3000/filter/delete
+Content-Type: application/json
+
+{
+    "name":"Funnnn"
+}
